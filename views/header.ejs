@@ -1,0 +1,19 @@
+<header>
+    <meta charset="UTF-8"  name="viewport" content="width=device-width,initial-scale=1 user-scalable=no">
+    <div class="head-box clearfix">
+        <!--<div class="pull-left logo">图书馆管理系统</div>-->
+        <nav class="pull-left head-menu" id="headMenu">
+            <a href="/">借阅</a>
+            <a href="/share">评论</a>
+            <a href="/procurement">采购</a>
+            <a href="/user">历史记录</a>
+            <% if(role == 1){ %>
+            <a href="/admin">管理</a>
+            <% } %>
+        </nav>
+        <div class="pull-right head-user">
+            <!--<a href="/user">您好：<%=username%></a>-->
+            <a href="javascript:void(0)" id="logout">退出</a>
+        </div>
+    </div>
+</header>
